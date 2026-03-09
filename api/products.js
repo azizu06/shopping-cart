@@ -1,5 +1,3 @@
-import fs from "fs/promises";
-
 const LAUNCHER_URL =
   "https://ll.thespacedevs.com/2.3.0/launcher_configurations/?format=json&limit=100";
 const SPACECRAFT_URL =
@@ -16,6 +14,7 @@ function formatItem(item, type) {
   const origin = type === "launcher" ? "manufacturer" : "agency";
   return {
     id: `${type}-${item.id}`,
+    type: type,
     name: item.name,
     manufacturer: item[origin].name,
     image: item.image.image_url,
@@ -23,7 +22,7 @@ function formatItem(item, type) {
   };
 }
 
-async function fetchData() {
+export async function fetchData() {
   const [launcherRaw, spacecraftRaw] = await Promise.all([
     fetch(LAUNCHER_URL),
     fetch(SPACECRAFT_URL),
@@ -41,11 +40,5 @@ async function fetchData() {
     .slice(0, 15)
     .map((item) => formatItem(item, "spacecraft"));
 
-  const products = [...launchers, ...spacecrafts];
-  await fs.writeFile(
-    "./src/data/products.json",
-    JSON.stringify(products, null, 2),
-  );
+  return [...launchers, ...spacecrafts];
 }
-
-fetchData();
