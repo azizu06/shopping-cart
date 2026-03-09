@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ChevronUp, ChevronDown } from "lucide-react";
 
-const DropDown = (options, value, setOption) => {
+const DropDown = ({ options, value, setOption }) => {
   const [open, setOpen] = useState(false);
   const selected = options.find((opt) => opt.value === value);
 
