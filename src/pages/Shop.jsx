@@ -29,14 +29,17 @@ const Shop = () => {
     gcTime: 1000 * 60 * 60,
     refetchOnWindowFocus: false,
     refetchOnMount: false,
+    retry: 0,
   });
   if (isPending) return <p>Loading...</p>;
   if (error) return <p>Error loading products</p>;
 
-  const visibleProducts = [...products].filter((p) =>
+  let visibleProducts = [...products].filter((p) =>
     p.name.toLowerCase().includes(search.toLowerCase()),
   );
-  if (filterFns(filterType)) visibleProducts.filter(filterFns(filterType));
+  if (filterFns[filterType]) {
+    visibleProducts = visibleProducts.filter(filterFns[filterType]);
+  }
   if (sortFns[sortType]) visibleProducts.sort(sortFns[sortType]);
 
   return (
