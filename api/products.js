@@ -22,7 +22,7 @@ function formatItem(item, type) {
   };
 }
 
-export async function fetchData() {
+export async function fetchProducts() {
   const [launcherRaw, spacecraftRaw] = await Promise.all([
     fetch(LAUNCHER_URL),
     fetch(SPACECRAFT_URL),
