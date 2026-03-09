@@ -22,13 +22,23 @@ function formatItem(item, type) {
   };
 }
 
+async function fetchJson(url) {
+  const res = await fetch(url);
+
+  if (!res.ok) {
+    const err = new Error(`Request failed: ${res.status} ${res.statusText}`);
+    err.status = res.status;
+    throw err;
+  }
+
+  return res.json();
+}
+
 export async function fetchProducts() {
-  const [launcherRaw, spacecraftRaw] = await Promise.all([
-    fetch(LAUNCHER_URL),
-    fetch(SPACECRAFT_URL),
+  const [launchersData, spacecraftsData] = await Promise.all([
+    fetchJson(LAUNCHER_URL),
+    fetchJson(SPACECRAFT_URL),
   ]);
-  const launchersData = await launcherRaw.json();
-  const spacecraftsData = await spacecraftRaw.json();
 
   const launchers = launchersData.results
     .filter((item) => isValidItem(item, "launcher"))
