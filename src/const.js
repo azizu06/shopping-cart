@@ -1,8 +1,8 @@
 export const sortFns = {
   priceAsc: (a, b) => a.price - b.price,
   priceDesc: (a, b) => b.price - a.price,
-  nameAsc: (a, b) => a.name.localCompare(b.name),
-  nameDesc: (a, b) => b.name.localCompare(a.name),
+  nameAsc: (a, b) => a.name.localeCompare(b.name),
+  nameDesc: (a, b) => b.name.localeCompare(a.name),
 };
 
 export const sortOptions = [
