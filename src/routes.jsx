@@ -1,20 +1,27 @@
 import Home from "./pages/Home";
-import Products from "./pages/Shop";
+import Shop from "./pages/Shop";
 import Cart from "./pages/Cart";
+import Layout from "./components/Layout";
 
 export const router = () => {
   [
     {
       path: "/",
-      element: <Home />,
-    },
-    {
-      path: "/shop",
-      element: <Products />,
-    },
-    {
-      path: "/cart",
-      element: <Cart />,
+      element: <Layout />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: "/shop",
+          element: <Shop />,
+        },
+        {
+          path: "/cart",
+          element: <Cart />,
+        },
+      ],
     },
   ];
 };
