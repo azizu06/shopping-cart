@@ -1,3 +1,4 @@
+import localProducts from "../data/products.json";
 const LAUNCHER_URL =
   "https://ll.thespacedevs.com/2.3.0/launcher_configurations/?format=json&limit=100";
 const SPACECRAFT_URL =
@@ -22,33 +23,45 @@ function formatItem(item, type) {
   };
 }
 
-async function fetchJson(url) {
-  const res = await fetch(url);
+async function fetchJson(url, timeoutMs = 8000) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
 
-  if (!res.ok) {
-    const err = new Error(`Request failed: ${res.status} ${res.statusText}`);
-    err.status = res.status;
-    throw err;
+  try {
+    const res = await fetch(url, { signal: controller.signal });
+
+    if (!res.ok) {
+      const err = new Error(`Request failed: ${res.status} ${res.statusText}`);
+      err.status = res.status;
+      throw err;
+    }
+
+    return await res.json();
+  } finally {
+    clearTimeout(timer);
   }
-
-  return res.json();
 }
 
 export async function fetchProducts() {
-  const [launchersData, spacecraftsData] = await Promise.all([
-    fetchJson(LAUNCHER_URL),
-    fetchJson(SPACECRAFT_URL),
-  ]);
+  try {
+    const [launchersData, spacecraftsData] = await Promise.all([
+      fetchJson(LAUNCHER_URL),
+      fetchJson(SPACECRAFT_URL),
+    ]);
 
-  const launchers = launchersData.results
-    .filter((item) => isValidItem(item, "launcher"))
-    .slice(0, 15)
-    .map((item) => formatItem(item, "launcher"));
+    const launchers = launchersData.results
+      .filter((item) => isValidItem(item, "launcher"))
+      .slice(0, 15)
+      .map((item) => formatItem(item, "launcher"));
 
-  const spacecrafts = spacecraftsData.results
-    .filter((item) => isValidItem(item, "spacecraft"))
-    .slice(0, 15)
-    .map((item) => formatItem(item, "spacecraft"));
+    const spacecrafts = spacecraftsData.results
+      .filter((item) => isValidItem(item, "spacecraft"))
+      .slice(0, 15)
+      .map((item) => formatItem(item, "spacecraft"));
 
-  return [...launchers, ...spacecrafts];
+    return [...launchers, ...spacecrafts];
+  } catch (err) {
+    console.warn("Using local products:", err);
+    return localProducts;
+  }
 }

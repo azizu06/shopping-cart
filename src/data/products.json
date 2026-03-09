@@ -1,212 +1,242 @@
 [
   {
     "id": "launcher-136",
+    "type": "launcher",
     "name": "Angara 1.2",
     "manufacturer": "Khrunichev State Research and Production Space Center",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/angara25201.2_image_20190224012254.jpeg",
-    "price": 45373292
+    "price": 20371316
   },
   {
     "id": "launcher-53",
+    "type": "launcher",
     "name": "Angara-1.2pp",
     "manufacturer": "Khrunichev State Research and Production Space Center",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/angara-1.2pp_image_20190630234801.jpg",
-    "price": 17868833
+    "price": 51174657
   },
   {
     "id": "launcher-73",
+    "type": "launcher",
     "name": "Angara A5",
     "manufacturer": "Khrunichev State Research and Production Space Center",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/angara2520a5_image_20190630234836.jpg",
-    "price": 29638860
+    "price": 39314729
   },
   {
     "id": "launcher-196",
+    "type": "launcher",
     "name": "Angara A5/Blok DM-03",
     "manufacturer": "Khrunichev State Research and Production Space Center",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/angara_a5_on_si_image_20240409071243.jpeg",
-    "price": 50971837
+    "price": 57054575
   },
   {
     "id": "launcher-504",
+    "type": "launcher",
     "name": "Angara A5/Briz-M",
     "manufacturer": "Khrunichev State Research and Production Space Center",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/angara_a52fbri_image_20240102171438.jpg",
-    "price": 29417976
+    "price": 38668385
   },
   {
     "id": "launcher-69",
+    "type": "launcher",
     "name": "Antares 110",
     "manufacturer": "Orbital Sciences Corporation",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/antares_110_lau_image_20240308082903.jpg",
-    "price": 43082146
+    "price": 44686206
   },
   {
     "id": "launcher-63",
+    "type": "launcher",
     "name": "Antares 120",
     "manufacturer": "Orbital Sciences Corporation",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/antares_image_20190704015241.jpeg",
-    "price": 54954998
+    "price": 45732087
   },
   {
     "id": "launcher-59",
+    "type": "launcher",
     "name": "Antares 130",
     "manufacturer": "Orbital Sciences Corporation",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/antares_130_exp_image_20240308083257.jpg",
-    "price": 59006651
+    "price": 42246420
   },
   {
     "id": "launcher-165",
+    "type": "launcher",
     "name": "Antares 230",
     "manufacturer": "Northrop Grumman Space Systems",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/antares_230_lau_image_20240308082345.jpeg",
-    "price": 58481386
+    "price": 45638848
   },
   {
     "id": "launcher-210",
+    "type": "launcher",
     "name": "Antares 230+",
     "manufacturer": "Northrop Grumman Space Systems",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/antares_230252_image_20230801170759.png",
-    "price": 18359302
+    "price": 21198491
   },
   {
     "id": "launcher-513",
+    "type": "launcher",
     "name": "Apollo LM",
     "manufacturer": "Northrop Grumman Space Systems",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/apollo_14_lm_on_image_20240813073933.jpg",
-    "price": 27552867
+    "price": 58531088
   },
   {
     "id": "launcher-126",
+    "type": "launcher",
     "name": "Ares I-X",
     "manufacturer": "National Aeronautics and Space Administration",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ares2520i-x_image_20190222030444.jpeg",
-    "price": 23837958
+    "price": 55198960
   },
   {
     "id": "launcher-219",
+    "type": "launcher",
     "name": "Ariane 1",
     "manufacturer": "Aérospatiale",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_1_in_fli_image_20240314094301.jpg",
-    "price": 20100896
+    "price": 12781814
   },
   {
     "id": "launcher-220",
+    "type": "launcher",
     "name": "Ariane 2",
     "manufacturer": "Aérospatiale",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_2_liftof_image_20240314094631.jpg",
-    "price": 21429037
+    "price": 16938241
   },
   {
     "id": "launcher-221",
+    "type": "launcher",
     "name": "Ariane 3",
     "manufacturer": "Aérospatiale",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_3_liftof_image_20240314095002.jpg",
-    "price": 11891118
+    "price": 45352287
   },
   {
     "id": "spacecraft-10",
+    "type": "spacecraft",
     "name": "Apollo Command/Service Module",
     "manufacturer": "North American Aviation",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/apollo2520command2fservice2520module_image_20190207032507.jpeg",
-    "price": 11959629
+    "price": 39879749
   },
   {
     "id": "spacecraft-43",
+    "type": "spacecraft",
     "name": "Apollo Lunar Module",
     "manufacturer": "National Aeronautics and Space Administration",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/lunar_module_on_image_20240505074251.jpeg",
-    "price": 34235478
+    "price": 13547157
   },
   {
     "id": "spacecraft-17",
+    "type": "spacecraft",
     "name": "Automated Transfer Vehicle (ATV)",
     "manufacturer": "Arianespace",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/automated_trans_image_20231118111716.jpeg",
-    "price": 57935471
+    "price": 44759409
   },
   {
     "id": "spacecraft-28",
+    "type": "spacecraft",
     "name": "Buran",
     "manufacturer": "Russian Federal Space Agency (ROSCOSMOS)",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/buran_image_20210902151254.jpg",
-    "price": 33461371
+    "price": 48844623
   },
   {
     "id": "spacecraft-7",
+    "type": "spacecraft",
     "name": "Cargo Dragon 2",
     "manufacturer": "SpaceX",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/crs-28_dragon_d_image_20230530191602.jpeg",
-    "price": 27297356
+    "price": 56386734
   },
   {
     "id": "spacecraft-22",
+    "type": "spacecraft",
     "name": "Crew Capsule 1",
     "manufacturer": "Blue Origin",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/crew2520capsule25201_image_20190309100308.jpg",
-    "price": 41346741
+    "price": 33888095
   },
   {
     "id": "spacecraft-21",
+    "type": "spacecraft",
     "name": "Crew Capsule 2.0",
     "manufacturer": "Blue Origin",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/crew2520capsule25202.0_image_20190309095011.jpeg",
-    "price": 33701509
+    "price": 43080060
   },
   {
     "id": "spacecraft-6",
+    "type": "spacecraft",
     "name": "Crew Dragon 2",
     "manufacturer": "SpaceX",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spacex_dm-2_cre_image_20200504065311.jpeg",
-    "price": 36719971
+    "price": 36947047
   },
   {
     "id": "spacecraft-9",
+    "type": "spacecraft",
     "name": "CST-100 Starliner",
     "manufacturer": "Boeing",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/boeing_starline_image_20220525180700.jpeg",
-    "price": 48082696
+    "price": 16601458
   },
   {
     "id": "spacecraft-19",
+    "type": "spacecraft",
     "name": "Cygnus Enhanced",
     "manufacturer": "Northrop Grumman Space Systems",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cygnus2520enhanced_image_20190207032513.jpeg",
-    "price": 51571501
+    "price": 23069354
   },
   {
     "id": "spacecraft-5",
+    "type": "spacecraft",
     "name": "Cygnus Standard",
     "manufacturer": "Northrop Grumman Space Systems",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cygnus2520standard_image_20190207032514.jpeg",
-    "price": 45746816
+    "price": 11177742
   },
   {
     "id": "spacecraft-32",
+    "type": "spacecraft",
     "name": "Cygnus Upgraded",
     "manufacturer": "Northrop Grumman Space Systems",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cygnus2520enhanced_image_20190207032513.jpeg",
-    "price": 59901048
+    "price": 15072500
   },
   {
     "id": "spacecraft-3",
+    "type": "spacecraft",
     "name": "Dragon 1",
     "manufacturer": "SpaceX",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/crs-172520dragon2520berthing_image_20190318203226.jpeg",
-    "price": 29981456
+    "price": 23581993
   },
   {
     "id": "spacecraft-24",
+    "type": "spacecraft",
     "name": "Dream Chaser",
     "manufacturer": "Sierra Nevada Corporation",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/dream_chaser_image_20200821084247.jpeg",
-    "price": 17910512
+    "price": 56094654
   },
   {
     "id": "spacecraft-29",
+    "type": "spacecraft",
     "name": "Gaganyaan",
     "manufacturer": "Hindustan Aeronautics Limited",
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/gaganyaan_image_20231021132705.jpeg",
-    "price": 10257958
+    "price": 41727487
   }
 ]
