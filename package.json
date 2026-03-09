@@ -12,6 +12,7 @@
     "fetch-products": "node scripts/fetchData.js"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.90.21",
     "localforage": "^1.10.0",
     "match-sorter": "^8.2.0",
     "react": "^19.2.0",
