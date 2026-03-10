@@ -41,13 +41,12 @@ const ShopItem = ({ item, cart, addToCart }) => {
               <Plus size={16} />
             </button>
           </div>
-          <div className="flex items-center justify-center gap-2 border w-40">
+          <div
+            className="flex items-center justify-center gap-2 border w-40"
+            onClick={() => addToCart(item.id, draft)}
+          >
             <ShoppingCart size={18} />
-            {item.id in cart ? (
-              <button onClick={() => addToCart(item.id, draft)}>Update</button>
-            ) : (
-              <button onClick={() => addToCart(item.id, draft)}>Add</button>
-            )}
+            {item.id in cart ? <button>Update</button> : <button>Add</button>}
           </div>
         </div>
       </div>
