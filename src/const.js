@@ -7,7 +7,7 @@ export const sortFns = {
 
 export const sortOptions = [
   {
-    label: "Reccomended",
+    label: "Recommended",
     value: "default",
   },
   {
