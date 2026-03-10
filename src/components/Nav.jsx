@@ -49,7 +49,7 @@ const NavBar = () => {
               Cart
             </span>
             {cartCount > 0 && (
-              <span className="absolute -right-2 -top-2 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-gradient-to-r from-fuchsia-500 to-cyan-400 px-1 text-[10px] font-semibold text-slate-950 shadow-[0_0_20px_rgba(217,70,239,0.45)]">
+              <span className="absolute -right-2 -top-2 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-linear-to-r from-fuchsia-500 to-cyan-400 px-1 text-[10px] font-semibold text-slate-950 shadow-[0_0_20px_rgba(217,70,239,0.45)]">
                 {cartCount > 99 ? "99+" : cartCount}
               </span>
             )}

@@ -22,7 +22,7 @@ const DropDown = ({ options, value, setOption }) => {
         )}
       </button>
       {open && (
-        <div className="absolute z-[60] mt-2 flex w-full flex-col overflow-hidden rounded-xl border border-slate-500/60 bg-slate-950/95 py-1 shadow-[0_18px_42px_rgba(2,6,23,0.68)] backdrop-blur-md">
+        <div className="absolute z-60 mt-2 flex w-full flex-col overflow-hidden rounded-xl border border-slate-500/60 bg-slate-950/95 py-1 shadow-[0_18px_42px_rgba(2,6,23,0.68)] backdrop-blur-md">
           {options.map((opt) => (
             <button
               type="button"

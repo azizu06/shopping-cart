@@ -14,7 +14,7 @@ const ShopItem = ({ item, cart, addToCart }) => {
           alt={item.type}
           className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-slate-950/70 via-transparent to-transparent" />
         <span className="absolute left-3 top-3 rounded-full border border-cyan-300/35 bg-cyan-300/15 px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-cyan-100">
           {item.type}
         </span>
