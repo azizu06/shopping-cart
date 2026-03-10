@@ -7,14 +7,12 @@ const DropDown = ({ options, value, setOption }) => {
 
   return (
     <div className="relative">
-      <div className="flex justify-between">
-        <button onClick={() => setOpen(!open)}>
-          {selected?.label || "Select an Option"}
-        </button>
+      <div className="flex justify-between" onClick={() => setOpen(!open)}>
+        <button>{selected?.label || "Select an Option"}</button>
         {open ? <ChevronUp /> : <ChevronDown />}
       </div>
       {open && (
-        <div className="flex flex-col absolute">
+        <div className="flex flex-col absolute bg-gray-900">
           {options.map((opt) => (
             <button
               key={opt.value}
