@@ -19,7 +19,7 @@ const ShopItem = ({ item, cart, addToCart }) => {
           <p>${item.price}</p>
         </div>
         <div className="flex justify-center gap-6 border p-4">
-          <QtyStepper setDraft={setDraft} draft={draft} />
+          <QtyStepper setCount={setDraft} count={draft} min={0} />
           <div
             className="flex items-center justify-center gap-2 border w-40"
             onClick={() => addToCart(item.id, draft)}
