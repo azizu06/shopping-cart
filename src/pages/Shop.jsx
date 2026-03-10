@@ -20,6 +20,7 @@ const Shop = () => {
         delete updated[id];
         return updated;
       });
+      return;
     }
     setCart((prev) => ({
       ...prev,
