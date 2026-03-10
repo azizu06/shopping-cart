@@ -47,7 +47,7 @@ const Home = () => {
             <div className="flex flex-wrap items-center gap-3">
               <Link
                 to="/shop"
-                className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-cyan-400 via-sky-400 to-violet-400 px-5 py-3 text-sm font-semibold text-slate-950 shadow-[0_14px_30px_rgba(56,189,248,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_34px_rgba(56,189,248,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300/70"
+                className="inline-flex items-center gap-2 rounded-xl bg-linear-to-r from-cyan-400 via-sky-400 to-violet-400 px-5 py-3 text-sm font-semibold text-slate-950 shadow-[0_14px_30px_rgba(56,189,248,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_34px_rgba(56,189,248,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300/70"
               >
                 Explore the Fleet
                 <ArrowRight size={16} />

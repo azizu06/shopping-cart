@@ -101,7 +101,7 @@ const Cart = () => {
         </p>
         <Link
           to="/shop"
-          className="mt-6 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-cyan-400 via-sky-400 to-violet-400 px-5 py-3 text-sm font-semibold text-slate-950 shadow-[0_16px_32px_rgba(56,189,248,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_20px_36px_rgba(56,189,248,0.48)]"
+          className="mt-6 inline-flex items-center gap-2 rounded-xl bg-linear-to-r from-cyan-400 via-sky-400 to-violet-400 px-5 py-3 text-sm font-semibold text-slate-950 shadow-[0_16px_32px_rgba(56,189,248,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_20px_36px_rgba(56,189,248,0.48)]"
         >
           Browse Products
           <ArrowRight size={16} />
@@ -161,7 +161,7 @@ const Cart = () => {
             </div>
             <button
               type="button"
-              className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-cyan-400 via-sky-400 to-violet-400 px-4 py-3 text-sm font-semibold text-slate-950 shadow-[0_18px_34px_rgba(56,189,248,0.33)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_22px_38px_rgba(56,189,248,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300/70 active:scale-[0.99]"
+              className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-linear-to-r from-cyan-400 via-sky-400 to-violet-400 px-4 py-3 text-sm font-semibold text-slate-950 shadow-[0_18px_34px_rgba(56,189,248,0.33)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_22px_38px_rgba(56,189,248,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300/70 active:scale-[0.99]"
             >
               Proceed to Checkout
               <ArrowRight size={16} />
