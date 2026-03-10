@@ -14,7 +14,8 @@ const NavBar = () => {
         ? "bg-cyan-400/20 text-cyan-200 shadow-[0_0_26px_rgba(34,211,238,0.25)]"
         : "text-slate-300 hover:bg-slate-100/10 hover:text-slate-100",
     ].join(" ");
-  const cartLinkStyle = ({ isActive }) => `${navLinkStyle({ isActive })} relative`;
+  const cartLinkStyle = ({ isActive }) =>
+    `${navLinkStyle({ isActive })} relative`;
 
   return (
     <header className="fixed inset-x-0 top-3 z-50 px-4 sm:px-6 lg:px-10">
@@ -27,8 +28,12 @@ const NavBar = () => {
             <Orbit size={18} />
           </span>
           <div className="flex flex-col leading-tight">
-            <span className="hidden text-xs uppercase tracking-[0.28em] text-slate-400 sm:block">Orbital Market</span>
-            <span className="text-lg font-semibold tracking-wide text-gradient">SpaceShop</span>
+            <span className="hidden text-xs uppercase tracking-[0.28em] text-slate-400 sm:block">
+              Orbital Market
+            </span>
+            <span className="text-lg font-semibold tracking-wide text-gradient">
+              SpaceShop
+            </span>
           </div>
         </Link>
         <div className="flex items-center gap-1 sm:gap-2">
