@@ -14,9 +14,16 @@ const Shop = () => {
   const [sortType, setsortType] = useState("default");
 
   const addToCart = (id, count) => {
+    if (count === 0) {
+      setCart((prev) => {
+        const updated = { ...prev };
+        delete updated[id];
+        return updated;
+      });
+    }
     setCart((prev) => ({
       ...prev,
-      [id]: (prev[id] ?? 0) + count,
+      [id]: count,
     }));
   };
   const {
