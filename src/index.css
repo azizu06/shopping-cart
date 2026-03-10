@@ -14,3 +14,8 @@
   outline: none;
   box-shadow: none;
 }
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: none;
+}
