@@ -5,6 +5,7 @@ import { CartContext } from "../context/CartContext";
 import { sortOptions, filterOptions, sortFns, filterFns } from "../const";
 import DropDown from "../components/Dropdown";
 import ShopItem from "../components/ShopItem";
+import { Search } from "lucide-react";
 
 const Shop = () => {
   const { cart, setCart } = useContext(CartContext);
@@ -44,14 +45,19 @@ const Shop = () => {
 
   return (
     <div className="flex flex-col gap-5">
-      <h1>Space Arsenal</h1>
+      <h1 className="flex justify-center">Space Arsenal</h1>
       <div className="flex justify-between">
-        <input
-          type="text"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-        <div className="flex gap-4">
+        <div className="flex gap-2 border items-center pl-2 no-spinner">
+          <Search size={18} />
+          <input
+            type="text"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="w-80 p-2"
+            placeholder="Search for products"
+          />
+        </div>
+        <div className="flex gap-16">
           <DropDown
             options={filterOptions}
             value={filterType}
@@ -64,7 +70,7 @@ const Shop = () => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-3 gap-10">
         {visibleProducts.map((p) => (
           <ShopItem key={p.id} item={p} cart={cart} addToCart={addToCart} />
         ))}
