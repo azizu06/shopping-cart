@@ -22,9 +22,15 @@ const ShopItem = ({ item, cart, addToCart }) => {
 
       <div className="space-y-4 p-4">
         <div className="space-y-2">
-          <h3 className="line-clamp-2 text-lg font-semibold text-slate-100">{item.name}</h3>
-          <p className="line-clamp-2 text-sm text-slate-400">{item.manufacturer}</p>
-          <p className="text-xl font-semibold text-cyan-200">${item.price.toLocaleString()}</p>
+          <h3 className="line-clamp-2 text-lg font-semibold text-slate-100">
+            {item.name}
+          </h3>
+          <p className="line-clamp-2 text-sm text-slate-400">
+            {item.manufacturer}
+          </p>
+          <p className="text-xl font-semibold text-cyan-200">
+            ${item.price.toLocaleString()}
+          </p>
         </div>
 
         <div className="flex flex-wrap items-center justify-between gap-3 border-t border-slate-700/60 pt-2">
