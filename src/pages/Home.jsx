@@ -39,9 +39,10 @@ const Home = () => {
               With Premium Space Hardware
             </h1>
             <p className="max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
-              SpaceShop is a futuristic aerospace marketplace for launch systems, spacecraft, and mission
-              essentials. Browse cinematic product cards, tune quantities precisely, and command your
-              cart with confidence.
+              SpaceShop is a futuristic aerospace marketplace for launch
+              systems, spacecraft, and mission essentials. Browse cinematic
+              product cards, tune quantities precisely, and command your cart
+              with confidence.
             </p>
             <div className="flex flex-wrap items-center gap-3">
               <Link
@@ -60,7 +61,9 @@ const Home = () => {
             </div>
           </div>
           <div className="glass-panel rounded-2xl p-6 sm:p-8">
-            <p className="text-xs font-medium uppercase tracking-[0.24em] text-slate-400">Flight Deck Stats</p>
+            <p className="text-xs font-medium uppercase tracking-[0.24em] text-slate-400">
+              Flight Deck Stats
+            </p>
             <div className="mt-5 grid grid-cols-2 gap-4 text-slate-100">
               <div className="rounded-xl border border-slate-600/40 bg-slate-900/45 p-4">
                 <p className="text-2xl font-semibold text-cyan-200">30+</p>
@@ -71,9 +74,12 @@ const Home = () => {
                 <p className="mt-1 text-sm text-slate-300">Mission Access</p>
               </div>
               <div className="col-span-2 rounded-xl border border-slate-600/40 bg-slate-900/45 p-4">
-                <p className="text-2xl font-semibold text-sky-200">Realtime Cart Telemetry</p>
+                <p className="text-2xl font-semibold text-sky-200">
+                  Realtime Cart Telemetry
+                </p>
                 <p className="mt-1 text-sm text-slate-300">
-                  Every quantity update reflects instantly across navigation, shop, and checkout views.
+                  Every quantity update reflects instantly across navigation,
+                  shop, and checkout views.
                 </p>
               </div>
             </div>
@@ -93,8 +99,12 @@ const Home = () => {
               <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg border border-cyan-300/30 bg-cyan-300/10 text-cyan-200 transition group-hover:scale-105">
                 <IconComponent size={18} />
               </div>
-              <h2 className="text-lg font-semibold text-slate-100">{highlight.title}</h2>
-              <p className="mt-2 text-sm leading-relaxed text-slate-300">{highlight.text}</p>
+              <h2 className="text-lg font-semibold text-slate-100">
+                {highlight.title}
+              </h2>
+              <p className="mt-2 text-sm leading-relaxed text-slate-300">
+                {highlight.text}
+              </p>
             </article>
           );
         })}
