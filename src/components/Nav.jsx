@@ -10,8 +10,10 @@ const NavBar = () => {
     "cursor-pointer p-4 hover:bg-blue-300 gap-2 flex items-center";
   return (
     <div className="fixed inset-x-0 top h-16 z-50">
-      <nav className="flex w-screen backdrop-blur justify-between gap-6 rounded-l border px-12 py-2">
-        <button className="cursor-pointer">SpaceShop</button>
+      <nav className="flex w-screen backdrop-blur justify-between gap-6 rounded-l border px-12 py-3">
+        <Link to="/" className={btnStyle}>
+          SpaceShop
+        </Link>
         <div className="flex gap-5">
           <Link to="/" className={btnStyle}>
             Home
