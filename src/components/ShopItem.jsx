@@ -29,7 +29,10 @@ const ShopItem = ({ item, cart, addToCart }) => {
             {item.manufacturer}
           </p>
           <p className="text-xl font-semibold text-cyan-200">
-            ${item.price.toLocaleString()}
+            {item.price.toLocaleString("en-US", {
+              style: "currency",
+              currency: "USD",
+            })}
           </p>
         </div>
 
