@@ -146,7 +146,10 @@ const Cart = () => {
               >
                 <p className="text-sm text-slate-300">{sum.label}</p>
                 <p className="text-sm font-medium text-slate-100">
-                  ${sum.value.toFixed(2)}
+                  {sum.value.toLocaleString("en-US", {
+                    style: "currency",
+                    currency: "USD",
+                  })}
                 </p>
               </div>
             ))}
@@ -156,7 +159,10 @@ const Cart = () => {
             <div className="flex items-center justify-between">
               <p className="text-sm font-medium text-slate-300">Total</p>
               <p className="text-2xl font-semibold text-cyan-200">
-                ${orderTotal.toFixed(2)}
+                {orderTotal.toLocaleString("en-US", {
+                  style: "currency",
+                  currency: "USD",
+                })}
               </p>
             </div>
             <button

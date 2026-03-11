@@ -9,15 +9,33 @@ const CartItem = ({ item, removeItem, updateCount, cart }) => {
     <article className="surface-card flex w-full flex-col gap-4 rounded-2xl p-4 sm:flex-row sm:items-center sm:justify-between">
       <div className="flex min-w-0 gap-4">
         <div className="h-24 w-24 shrink-0 overflow-hidden rounded-xl border border-slate-600/40 sm:h-28 sm:w-28">
-          <img src={item.image} alt={item.name} className="h-full w-full object-cover" />
+          <img
+            src={item.image}
+            alt={item.name}
+            className="h-full w-full object-cover"
+          />
         </div>
         <div className="min-w-0 space-y-1">
-          <p className="line-clamp-2 text-base font-semibold text-slate-100">{item.name}</p>
-          <p className="line-clamp-1 text-sm text-slate-400">{item.manufacturer}</p>
+          <p className="line-clamp-2 text-base font-semibold text-slate-100">
+            {item.name}
+          </p>
+          <p className="line-clamp-1 text-sm text-slate-400">
+            {item.manufacturer}
+          </p>
           <p>
-            <span className="text-sm text-slate-300">${item.price.toLocaleString()} each</span>
-            <span className="ml-2 text-sm font-medium text-cyan-200">
-              Subtotal: ${itemTotal.toLocaleString()}
+            <span className="text-sm text-slate-300">
+              {item.price.toLocaleString("en-US", {
+                style: "currency",
+                currency: "USD",
+              })}{" "}
+              each
+            </span>
+            <span className="ml-8 text-sm font-medium text-cyan-200">
+              Subtotal:{" "}
+              {itemTotal.toLocaleString("en-US", {
+                style: "currency",
+                currency: "USD",
+              })}
             </span>
           </p>
         </div>
